@@ -1,0 +1,7 @@
+{
+  "name": "Slask Ask",
+  "description": "Anonymously post questions / comments to slack channels.",
+  "image": "heroku/python",
+  "repository": "https://github.com/erik/slack-ask",
+  "keywords": ["python", "slack"]
+}
