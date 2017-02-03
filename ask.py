@@ -39,7 +39,10 @@ def ask():
             'text': 'Failed to post. Try again.'
         })
 
-    return flask.jsonify({})
+    return flask.jsonify({
+        'response_type': 'ephemeral',
+        'text': ''
+    })
 
 
 if __name__ == '__main__':
