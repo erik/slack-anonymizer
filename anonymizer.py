@@ -12,8 +12,8 @@ CHANNEL_WHITELIST = [
 ]
 
 
-@app.route('/ask', methods=['POST'])
-def ask():
+@app.route('/', methods=['POST'])
+def anonymize():
     if flask.request.form['token'] != SLACK_TOKEN:
         flask.abort(400)
 

@@ -1,8 +1,8 @@
 {
-  "name": "Slask Ask",
+  "name": "Slask Anonymizer",
   "description": "Anonymously post questions / comments to slack channels.",
   "image": "heroku/python",
-  "repository": "https://github.com/erik/slack-ask",
+  "repository": "https://github.com/erik/slack-anonymizer",
   "keywords": ["python", "slack"],
   "env": {
     "SLACK_TOKEN": {

@@ -1,1 +1,1 @@
- web: gunicorn ask:app --log-file -
+ web: gunicorn anonymizer:app --log-file -
