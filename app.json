@@ -11,5 +11,10 @@
     "CHANNEL_WHITELIST": {
       "description": "Space separated list of channel names in which anonymous posting is allowed"
     }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
   }
 }
