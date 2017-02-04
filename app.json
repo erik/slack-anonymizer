@@ -3,5 +3,13 @@
   "description": "Anonymously post questions / comments to slack channels.",
   "image": "heroku/python",
   "repository": "https://github.com/erik/slack-ask",
-  "keywords": ["python", "slack"]
+  "keywords": ["python", "slack"],
+  "env": {
+    "SLACK_TOKEN": {
+      "description": "Token provided by Slack slash command to verify request authenticity."
+    },
+    "CHANNEL_WHITELIST": {
+      "description": "Space separated list of channel names in which anonymous posting is allowed"
+    }
+  }
 }
