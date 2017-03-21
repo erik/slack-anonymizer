@@ -1,5 +1,5 @@
 {
-  "name": "Slask Anonymizer",
+  "name": "Slack Anonymizer",
   "description": "Anonymously post questions / comments to slack channels.",
   "image": "heroku/python",
   "repository": "https://github.com/erik/slack-anonymizer",
