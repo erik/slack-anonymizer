@@ -8,8 +8,8 @@
     "SLACK_TOKEN": {
       "description": "Token provided by Slack slash command to verify request authenticity."
     },
-    "CHANNEL_WHITELIST": {
-      "description": "Space separated list of channel names in which anonymous posting is allowed"
+    "WEBHOOK_URL": {
+      "description": "Webhook url provided by slack to send anonymous posts to."
     }
   },
   "formation": {
