@@ -14,8 +14,17 @@ def anonymize():
     if flask.request.form['token'] != SLACK_TOKEN:
         flask.abort(400)
 
+    text = flask.request.form['text'].strip()
+
+    if not text:
+        return flask.jsonify({
+            'response_type': 'ephemeral',
+            'text': "Can't send empty text!"
+        })
+
     r = requests.post(WEBHOOK_URL, json={
-        'text': 'Received anonymously:\n\n' + flask.request.form['text']
+        'text': 'Received anonymously:',
+        'attachments': [{'text': text}]
     })
 
     if r.status_code != 200:
@@ -28,7 +37,7 @@ def anonymize():
         'response_type': 'ephemeral',
         'text': 'Anonymous comment submitted!',
         'attachments': [
-            {'text': flask.request.form['text']}
+            {'text': text}
         ]
 
     })
